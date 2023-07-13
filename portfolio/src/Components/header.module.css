@@ -1,0 +1,10 @@
+
+.img{
+    display: flex;
+    margin-right: 50px;
+}
+@media(min-width: 40rem) {
+    .header {
+        flex-direction: row;
+    }
+}
