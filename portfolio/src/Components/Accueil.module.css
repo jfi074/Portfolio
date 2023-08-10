@@ -1,0 +1,32 @@
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.presentation > div {
+    flex: 1;
+}
+
+.presentation > circle > img {
+    max-width: 100%;
+    border-radius: 50% ;
+}
+  
+.presentation > div > ul {
+    list-style: "\1F44D";
+  }
+
+@media(min-width: 45rem) {
+    .presentation {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .presentation.inverse > div {
+        order: -1;
+    }
+}
