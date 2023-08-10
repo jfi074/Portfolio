@@ -1,10 +1,18 @@
-
-.img{
-    display: flex;
-    margin-right: 50px;
+.header{
+    background-color: grey;
 }
-@media(min-width: 40rem) {
-    .header {
-        flex-direction: row;
-    }
+.header img {
+    height: 5rem;
+    cursor: pointer;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header > div {
+    display: grid;    
+    grid-template-columns: auto auto 1fr auto;
+    align-items: end;
+    gap: 1rem;
 }
