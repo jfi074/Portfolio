@@ -1,19 +1,12 @@
-
-import styles from '../styles/Menu.module.css'
-function Menu({setPage}) {
-    return <nav className={styles.element}>
-        <ul className={styles.element}>
-        <li className={styles.li}>
-                <a href="#" onClick={() =>setPage('Home')}>Accueil</a></li>
-            
-                <li className={styles.li}>
-            <a href="#" onClick={() => setPage('Apropos')}> À propos</a>
-               
-            </li>
-            <li className={styles.li}>
-            <a href="#" onClick={() => setPage('Projet')}> Projet</a>
-               
-            </li>
+import styles from '../styles/Menu.module.css';
+import Link from 'next/link';
+export default function Menu() {
+    return <nav className={styles.menu}>
+        <ul>
+            <li><Link href="/">Accueil</Link></li>
+            <li><Link href="/Projet1">Projet1</Link></li>
+            <li><Link href="/Projet2">Projet2</Link></li>
+            <li><Link href="/Contact">Contact</Link></li>
         </ul>
     </nav>
 }
